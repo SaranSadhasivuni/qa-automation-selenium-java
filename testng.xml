@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+
+    <listeners>
+        <listener class-name="com.qa.automation.qa_framework.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Regression Tests">
+        <classes>
+        	<!-- UI Tests -->
+            <class name="com.qa.automation.qa_framework.tests.LoginTest"/>
+            <!-- API Tests -->
+    		<class name="com.qa.automation.qa_framework.api.GetUserApiTest"/>
+    		<class name="com.qa.automation.qa_framework.api.CreateUserApiTest"/>
+        </classes>
+    </test>
+</suite>
